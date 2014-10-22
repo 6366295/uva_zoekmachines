@@ -102,7 +102,8 @@
             echo "<div class=\"col-md-4\">";
             echo "<div class=\"panel panel-default\"><div class=\"panel-body\">";
 
-            echo "WordCloud WordCloud WordCloud WordCloud WordCloud WordCloud WordCloud WordCloud WordCloud WordCloud";
+            $t = explode(".", $value['_source']['doc_id']);
+            echo "<img src=\""."images\\".$t[0].".png"."\" style=\"width:60%\">";
 
             echo "</div></div>";
             echo "</div>";
